@@ -1,0 +1,33 @@
+.header {
+    position: fixed;
+    width: 1100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    top: 12px;
+}
+.header > .logo {
+    width: 46px;
+    height: 42px;
+}
+.header > .navigation-tabs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+.navigation-tabs > li {
+    margin-right: 26px;
+    
+}
+
+.navigation-tabs > a {
+    font-size: 24px;
+    line-height: 28px;
+    text-decoration: none;
+    color: white !important;
+}
