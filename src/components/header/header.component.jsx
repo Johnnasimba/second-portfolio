@@ -9,22 +9,22 @@ const Header = () => {
                 <LogoIcon />
             </a>
             <ul className="navigation-tabs">
-                <li>
+                <li className="tab">
                     <a href="/">
                         Projects
                     </a>
                 </li>
-                <li>
+                <li className="tab">
                     <a href="/">
                         About
                     </a>
                 </li>
-                <li>
+                <li className="tab">
                     <a href="/">
                         Micro-credentials
                     </a>
                 </li>
-                <li className="contact">
+                <li className="tab contact">
                     <a href="/">
                         Contact
                     </a>

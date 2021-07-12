@@ -20,14 +20,42 @@
     justify-content: flex-end;
     list-style-type: none;
 }
-.navigation-tabs > li {
+.tab {
     margin-right: 26px;
+    color: white ;
     
 }
+.tab:hover {
+    border-bottom: 2px solid #F94040;
+}
 
-.navigation-tabs > a {
+.tab > a {
     font-size: 24px;
     line-height: 28px;
     text-decoration: none;
-    color: white ;
+    color: white ;  
 }
+.navigation-tabs > .contact {
+    width: 103px;
+    height: 35px;
+    text-align: center;
+    margin: 0 auto;
+    border: 1px solid #FB5B57;
+}
+.navigation-tabs > .contact:hover {
+    /* filter: grayscale(1); */
+    filter: hue-rotate(3.142rad);
+}
+.contact > a {
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;    
+    color: #FB5B57;   
+    
+}
+
+
+
