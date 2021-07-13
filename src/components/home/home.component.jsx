@@ -3,17 +3,13 @@ import React from 'react'
 import './home.styles.css';
 
 import LandingSection from './landind-section/landing-section.component';
+import AboutSection from './about-section/about-section.component';
 
 const Home = () => {
     return (
         <div className="home-container">
-            {/* landing section */}
             <LandingSection />
-            {/* About me section */}
-            <div className="about-section">
-                
-            </div>
-            {/* Work section */}
+            <AboutSection />
             <div className="work-section">
 
             </div>
