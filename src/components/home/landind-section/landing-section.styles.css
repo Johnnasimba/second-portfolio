@@ -1,0 +1,67 @@
+
+
+.landing-section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url("../../../images/cape-town-city.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.landing-section-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 130px;
+}
+.profile-image {
+    width: 303.28px;
+    height: 299px;
+}
+.profile-image img{
+    border-radius: 50%;
+}
+.my-name{  
+    height: 40px; 
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    margin-top: 100px;
+    margin-bottom: 0;
+       
+    color: #FB5B57;
+}
+.job-title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 84px;
+    margin-top: 0;
+    
+    color: #FFFFFF;     
+}
+
+.location {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    color: #FFFFFF;
+}
+
+.location i{
+    color: #FB5B57;
+}
