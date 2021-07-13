@@ -21,10 +21,12 @@
     list-style-type: none;
 }
 .tab {
+    position: relative;
     margin-right: 26px;
     color: white ;
     
 }
+
 .tab:hover {
     border-bottom: 2px solid #F94040;
 }
@@ -35,25 +37,25 @@
     text-decoration: none;
     color: white ;  
 }
-.navigation-tabs > .contact {
+
+.contact {
     width: 103px;
     height: 35px;
     text-align: center;
     margin: 0 auto;
     border: 1px solid #FB5B57;
+    color: #FB5B57; 
+    overflow: hidden;
 }
-.navigation-tabs > .contact:hover {
-    /* filter: grayscale(1); */
-    filter: hue-rotate(3.142rad);
-}
-.contact > a {
 
+
+.contact > a {    
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
-    line-height: 28px;    
-    color: #FB5B57;   
+    line-height: 28px;
+    color: #FB5B57;
     
 }
 
