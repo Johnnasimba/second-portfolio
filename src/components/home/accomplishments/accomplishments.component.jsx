@@ -6,7 +6,7 @@ const Accomplishments = () => {
     return (
         <div className="accomplishments-section">
             <div className="accomplishments-container">
-                    <h2>ACCOMPLISHMENTS</h2>
+                    <h3>ACCOMPLISHMENTS</h3>
                     <div className="barge-and-verification-link">
                         <figure>
                             <img src="/images/google-ux-design-certificate.png" alt="Google UX Design Certificate" />
