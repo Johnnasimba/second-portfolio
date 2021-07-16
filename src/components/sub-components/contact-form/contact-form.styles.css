@@ -1,0 +1,81 @@
+
+.contact-form{
+    width: 100%;
+    height: 500px;
+    margin-top: 30px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.contact-form > .name-and-email{
+    width: 100%;
+    margin-bottom: 10px;
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+.name-and-email > input{
+    width: 320px;
+    height: 48px;
+    margin-bottom: 20px;
+    padding-left: 10px;  
+
+ 
+    outline: none;
+    border: none;
+    border-radius: 5px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+
+    color: rgba(255, 255, 255, 0.67);
+    background: #1B3447;
+
+
+}
+
+.contact-form > .subject{
+    width: 690px;
+    height: 48px;
+    margin-bottom: 20px;
+    padding-left: 10px;  
+
+ 
+    outline: none;
+    border: none;
+    border-radius: 5px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+
+    color: rgba(255, 255, 255, 0.67);
+    background: #1B3447;
+
+}
+.contact-form > .message{
+    width: 100%;
+    padding-left: 10px;  
+    padding-top: 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+
+    color: rgba(255, 255, 255, 0.67);
+    background: #1B3447;
+
+}

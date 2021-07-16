@@ -1,14 +1,13 @@
-import React from 'react';
+import React from 'react'
 
-import './contact-form.styles.css';
+import './contact-card.styles.css';
 
-const ContactForm = () => {
+const ContactCard = () => {
     return (
-        <div className="contact-form-container">
-            <div className="contact-cards">
+        <div className="contact-cards">
                   {/* linked in card */}
                    <div className="contact-card">                 
-                        <i class="fab fa-linkedin fa-lg"></i>
+                        <i className="fab fa-linkedin fa-2x"></i>
                        <div className="contact-title-and-link">
                            <h6>LinkedIn</h6>
                            <a href="http://https://www.linkedin.com/in/john-nasimba/" target="_blank" rel="noopener noreferrer">
@@ -18,7 +17,7 @@ const ContactForm = () => {
                     </div>
                     {/* tell phone number card */}
                     <div className="contact-card">  
-                        <i className="fa fa-linkedin"></i>
+                    <i className="fas fa-phone-square-alt  fa-2x"></i>
                        <div className="contact-title-and-link">
                            <h6>Mobile Phone</h6>
                            <a href="https://www.linkedin.com/in/john-nasimba/" target="_blank" rel="noopener noreferrer">
@@ -28,7 +27,7 @@ const ContactForm = () => {
                     </div>
                      {/* Email card */}
                     <div className="contact-card">
-                       <i className="fa fa-linkedin"></i>  
+                       <i className="far fa-envelope  fa-2x"></i>
                        <div className="contact-title-and-link">
                            <h6>Email</h6>
                            <a href="https://www.linkedin.com/in/john-nasimba/" target="_blank" rel="noopener noreferrer">
@@ -37,13 +36,7 @@ const ContactForm = () => {
                        </div>
                    </div>
             </div>
-            {/* contact form */}
-            <form className="contact-form">
-                contact form
-            </form>
-
-        </div>
     )
 }
 
-export default ContactForm;
+export default ContactCard;
