@@ -13,6 +13,7 @@ const ContactForm = () => {
            <textarea name="message" id="message" className="message" cols="30" rows="10" placeholder="Message">
 
            </textarea>
+           <button type="submit">SEND MESSAGE</button>
         </form>
 
     )
