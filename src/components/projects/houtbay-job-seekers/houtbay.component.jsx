@@ -1,6 +1,5 @@
 import React from 'react';
 
-import './houtbay.styles.css';
 
 const HoutBay = () => {
     return (

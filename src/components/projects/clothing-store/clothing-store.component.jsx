@@ -1,7 +1,6 @@
 
 import React from 'react';
 
-import './clothing-store.styles.css';
 
 
 const ClothingStore = () => {
