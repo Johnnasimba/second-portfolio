@@ -4,7 +4,7 @@ import './dark-mode.styles.css';
 
 const DarkMode = () => {
     return (
-        <div className="dark-mode-container">
+        <div className="project dark-mode">
             Light and Dark mode project container
         </div>
     )

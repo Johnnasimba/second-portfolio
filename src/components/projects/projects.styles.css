@@ -26,3 +26,107 @@
 
 
 }
+.project {
+    width: 1100px;
+    height: 400px;
+    /* background: #000; */
+    margin: 2px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+}
+.project-image {
+    width: 50%;
+    height: 100%;
+}
+
+.project-details {
+    width: 50%;
+    height: 100%;
+}
+.project-title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+
+    color: #FFFFFF;
+
+}
+.project-description {
+    width: 300px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 28px;
+
+    color: #FFFFFF;
+}
+.project-languages{
+    width: 300px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.project-languages img{
+    height: 100%;
+    width: auto;
+}
+.project-links {
+    width: 300px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.project-links > .primary-button{    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 140px;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 5px;
+
+    list-style: none;
+    text-decoration: none; 
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;    
+    
+    background: #EB506E;
+    color: #FFFFFF;
+
+}
+.project-links > .secondary-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 140px;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 5px;
+
+    list-style: none;
+    text-decoration: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+
+    font-size: 18px;
+    line-height: 21px;
+    
+    border: 1px solid #EB506E;
+    color: #FFFFFF;
+}
+

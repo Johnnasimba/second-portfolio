@@ -5,7 +5,7 @@ import './infinity-scroll.styles.css';
 
 const InfinityScroll = () => {
     return (
-        <div className="infinity-scroll-container">
+        <div className="project infinity- scroll">
             Infinity scroll project will be displayed here.
         </div>
     )

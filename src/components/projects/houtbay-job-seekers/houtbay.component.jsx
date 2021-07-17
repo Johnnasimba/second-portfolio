@@ -4,7 +4,7 @@ import './houtbay.styles.css';
 
 const HoutBay = () => {
     return (
-        <div className="hout-bay-container">
+        <div className="project hout-bay">
             Hout bay job seekers project to be displayed here
         </div>
     )
