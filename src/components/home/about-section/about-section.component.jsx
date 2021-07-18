@@ -6,7 +6,7 @@ import './about-section.styles.css';
 const AboutSection = () => {
     return (
         <div className="about-section">
-           <h2 className="about">ABOUT</h2>
+           <h2 className="about-section-title">ABOUT</h2>
            <div className="image-and-short-description">
                <figure>
                     <img src="/images/about-image.png" alt="John Nasimba"/>

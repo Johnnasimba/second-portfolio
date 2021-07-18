@@ -1,0 +1,35 @@
+
+
+.description-section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
+
+
+    width: 1100px;
+    height: 650px;
+    margin-top: 100px;
+    
+}
+.description-section > .description {
+    width: 550px;
+    height: 600px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+
+    color: #FFFFFF;
+
+}
+.description-section figure{
+    width: 400px;
+    height: 600pxpx;
+}
+img {
+    height: 600px;
+}
