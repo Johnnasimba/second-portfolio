@@ -22,7 +22,7 @@ const DescriptionSection = () => {
                <p>You can check out my skills below, and don't forget to contact me for an interview and a possible job offer. </p>
            </div>
            <figure>
-               <img src="./images/John-nasimba(about-me).jpg" alt="" srcset="" />
+               <img  src="./images/John-nasimba(about-me).jpg" alt="" srcset="" className="description-section-image" />
            </figure>
         </div>
     )
