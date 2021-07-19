@@ -70,7 +70,56 @@ const SkillsSection = () => {
                 <div className="icon-category front-end">
                     <h4 className="category-title">FRONT-END</h4>
                     <div className="skills-section-icons">
-                        
+                        {/* Icons*/}
+                      <div className="icon-container">
+                          <p>NodeJS</p>
+                          <img src="./images/icons/nodejs.png" alt="NodeJS" />
+                      </div>
+                      <div className="icon-container">
+                          <p>Python</p>
+                          <img src="./images/icons/python.png" alt="Python" />
+                      </div>
+                      <div className="icon-container">
+                          <p>Django</p>
+                          <img src="./images/icons/django.png" alt="Django" />
+                      </div>
+                      <div className="icon-container">
+                          <p>PHP</p>
+                          <img src="./images/icons/php.png" alt="PHP" />
+                      </div>
+                      <div className="icon-container">
+                          <p>Laravel</p>
+                          <img src="./images/icons/laravel.png" alt="Laravel" />
+                      </div>
+                      <div className="icon-container">
+                          <p>MongoDB</p>
+                          <img src="./images/icons/mongodb.png" alt="MongoDB" />
+                      </div>
+                      <div className="icon-container">
+                          <p>MySQL</p>
+                          <img src="./images/icons/mysql.png" alt="MySQL" />
+                      </div>
+                      <div className="icon-container">
+                          <p>Postgres</p>
+                          <img src="./images/icons/postgres.png" alt="Postgres" />
+                      </div>
+                      <div className="icon-container">
+                          <p>Stripe</p>
+                          <img src="./images/icons/stripe.png" alt="Stripe" />
+                      </div>
+                      <div className="icon-container">
+                          <p>Firebase</p>
+                          <img src="./images/icons/firebase.png" alt="Firebase" />
+                      </div>
+                      <div className="icon-container">
+                          <p>Heroku</p>
+                          <img src="./images/icons/heroku.png" alt="Heroku" />
+                      </div>
+                      <div className="icon-container">
+                          <p>AWS</p>
+                          <img src="./images/icons/aws.png" alt="AWS" />
+                      </div>
+                      
                     </div>
                 </div>
            </div>
