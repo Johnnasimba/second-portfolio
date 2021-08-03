@@ -8,6 +8,10 @@
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
+
+    margin-bottom: 150px;
+
+
 }
 .work-together-section p{
     font-family: Roboto;
@@ -35,5 +39,4 @@
 }
 .work-together-section a:hover{
     border-bottom: 4px solid white;
-
 }

@@ -6,6 +6,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    margin-bottom: 200px;
+
 }
 .outside-work-section-title{
     font-family: Roboto;
@@ -27,5 +30,7 @@
     text-align: center;
 
     color: #FFFFFF;
+    margin-bottom: 200px;
+
 
 }
