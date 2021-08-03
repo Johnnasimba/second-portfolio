@@ -15,21 +15,22 @@ const SkillsSection = () => {
                     <div className="skills-section-icons">
                       {/* Icons*/}
                       <div className="icon-container">
-                          <p>HTML</p>
-                          <img src="./images/icons/html.png" alt="HTML" />
+                          <p>React</p>
+                          <img src="./images/icons/react.png" alt="React" />
+                      </div>\
+                      <div className="icon-container">
+                          <p>Redux</p>
+                          <img src="./images/icons/redux.png" alt="Redux" />
                       </div>
                       <div className="icon-container">
-                          <p>CSS</p>
-                          <img src="./images/icons/css.png" alt="CSS" />
+                          <p>GraphQL</p>
+                          <img src="./images/icons/graphql.png" alt="GraphQL" />
                       </div>
                       <div className="icon-container">
-                          <p>JavaScript</p>
-                          <img src="./images/icons/js.png" alt="JavaScript" />
+                          <p>AngularJS</p>
+                          <img src="./images/icons/angularjs.png" alt="AngularJS" />
                       </div>
-                      <div className="icon-container">
-                          <p>TypeScript</p>
-                          <img src="./images/icons/typescript.png" alt="TypeScript" />
-                      </div>
+                      
                       <div className="icon-container">
                           <p>Bootstrap</p>
                           <img src="./images/icons/bootstrap.png" alt="Bootstrap" />
@@ -47,21 +48,24 @@ const SkillsSection = () => {
                           <img src="./images/icons/jquery.png" alt="JQuery" />
                       </div>
                       <div className="icon-container">
-                          <p>React</p>
-                          <img src="./images/icons/react.png" alt="React" />
+                          <p>JavaScript</p>
+                          <img src="./images/icons/js.png" alt="JavaScript" />
                       </div>
                       <div className="icon-container">
-                          <p>Redux</p>
-                          <img src="./images/icons/redux.png" alt="Redux" />
+                          <p>TypeScript</p>
+                          <img src="./images/icons/typescript.png" alt="TypeScript" />
                       </div>
                       <div className="icon-container">
-                          <p>GraphQL</p>
-                          <img src="./images/icons/graphql.png" alt="GraphQL" />
+                          <p>HTML</p>
+                          <img src="./images/icons/html.png" alt="HTML" />
                       </div>
                       <div className="icon-container">
-                          <p>AngularJS</p>
-                          <img src="./images/icons/angularjs.png" alt="AngularJS" />
+                          <p>CSS</p>
+                          <img src="./images/icons/css.png" alt="CSS" />
                       </div>
+                      
+                     
+                      
                       
                         
                     </div>
