@@ -2,32 +2,32 @@ import React from 'react';
 import './header.styles.css';
 import { ReactComponent as LogoIcon} from './logo.svg';
 
+import { NavLink } from 'react-router-dom';
+
 const Header = () => {
     return (
         <div className="header">
-            <a className="logo" href="/">
+            <NavLink className="logo" to="/">
                 <LogoIcon />
-            </a>
+            </NavLink>
             <ul className="navigation-tabs">
                 <li className="tab">
-                    <a href="/">
+                    <NavLink to="/projects">
                         Projects
-                    </a>
+                    </NavLink>
                 </li>
                 <li className="tab">
-                    <a href="/">
+                    <NavLink to="/about">
                         About
-                    </a>
+                    </NavLink>
                 </li>
                 <li className="tab">
-                    <a href="/">
-                        Micro-credentials
-                    </a>
+                    <a href="https://micro-credentials.herokuapp.com/" target="_blank" rel="noopener noreferrer">Micro-credentials</a>
                 </li>
                 <li className="tab contact">
-                    <a href="/">
+                    <NavLink to="/contact">
                         Contact
-                    </a>
+                    </NavLink>
                 </li>
             </ul>
         </div>

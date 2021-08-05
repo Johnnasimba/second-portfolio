@@ -12,24 +12,24 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Router>
-        <Switch>
-          <Route path="/" exact>
-            <HomePage />
-          </Route>
-          <Route path="/about" >
-            <AboutPage />
-          </Route>
-          <Route path="/projects" >
-            <WorkPage />
-          </Route>
-          <Route path="/contact" >
-            <ContactPage />
-          </Route>
-        </Switch>
+        <Router>
+          <Header />
+          <Switch>
+            <Route path="/" exact>
+              <HomePage />
+            </Route>
+            <Route path="/about" >
+              <AboutPage />
+            </Route>
+            <Route path="/projects" >
+              <WorkPage />
+            </Route>
+            <Route path="/contact" >
+              <ContactPage />
+            </Route>
+          </Switch>
+        <Footer />     
       </Router>
-      <Footer />     
     </div>
   );
 }
