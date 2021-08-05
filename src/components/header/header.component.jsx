@@ -12,8 +12,8 @@ const Header = () => {
             </NavLink>
             <ul className="navigation-tabs">
                 <li className="tab">
-                    <NavLink to="/projects">
-                        Projects
+                    <NavLink to="/">
+                        Home
                     </NavLink>
                 </li>
                 <li className="tab">
@@ -21,6 +21,12 @@ const Header = () => {
                         About
                     </NavLink>
                 </li>
+                <li className="tab">
+                    <NavLink to="/projects">
+                        Projects
+                    </NavLink>
+                </li>
+               
                 <li className="tab">
                     <a href="https://micro-credentials.herokuapp.com/" target="_blank" rel="noopener noreferrer">Micro-credentials</a>
                 </li>
