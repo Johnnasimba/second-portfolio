@@ -7,22 +7,22 @@ import { NavLink } from 'react-router-dom';
 const Header = () => {
     return (
         <div className="header">
-            <NavLink className="logo" to="/">
+            <NavLink className="logo" exact to="/">
                 <LogoIcon />
             </NavLink>
             <ul className="navigation-tabs">
                 <li className="tab">
-                    <NavLink to="/">
+                    <NavLink exact to="/">
                         Home
                     </NavLink>
                 </li>
                 <li className="tab">
-                    <NavLink to="/about">
+                    <NavLink exact to="/about">
                         About
                     </NavLink>
                 </li>
                 <li className="tab">
-                    <NavLink to="/projects">
+                    <NavLink exact  to="/projects">
                         Projects
                     </NavLink>
                 </li>
@@ -31,7 +31,7 @@ const Header = () => {
                     <a href="https://micro-credentials.herokuapp.com/" target="_blank" rel="noopener noreferrer">Micro-credentials</a>
                 </li>
                 <li className="tab contact">
-                    <NavLink to="/contact">
+                    <NavLink exact  to="/contact">
                         Contact
                     </NavLink>
                 </li>

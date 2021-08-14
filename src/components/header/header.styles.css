@@ -27,6 +27,9 @@
     
 }
 
+.tab > .active {
+    border-bottom: 2px solid #F94040;
+}
 .tab:hover {
     border-bottom: 2px solid #F94040;
 }
