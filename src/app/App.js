@@ -1,3 +1,6 @@
+import React, { useLayoutEffect } from 'react';
+
+
 import Header from '../components/header/header.component';
 import Footer from '../components/footer/footer.component';
 import HomePage from '../pages/home-page'
@@ -7,7 +10,9 @@ import ContactPage from '../pages/contact-page';
 import styled from 'styled-components';
 
 
+
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
 
 const Wrapper = styled.div`
   width: 100vw;
@@ -19,6 +24,10 @@ const Wrapper = styled.div`
 `
 
 function App() {
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+  });
+
   return (
     <Wrapper>
         <Router>
