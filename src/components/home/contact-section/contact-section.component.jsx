@@ -1,24 +1,49 @@
 import React from 'react';
+import styled from 'styled-components';
 
 import ContactCard from '../../sub-components/contact-card/contact-card.component';
 import ContactFrom from '../../sub-components/contact-form/contact-form.component';
 
-
-import './contact-section.styles.css';
-
-
-
+const Wrapper =  styled.div`
+    width: 100vw;
+    height: 1000px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: #06273D;
+`;
+const Container = styled.div`
+    width: 1100px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+`;
+const Title = styled.h2`
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 42px;
+    color: #FFFFFF;
+`;
+const FormContainer = styled.div`
+    width: 700px;
+    height: 400px;
+`;
 const ContactSection =() => {
     return (
-        <div className="contact-section"> 
-            <div className="contact-container">
-                <h3>CONTACT</h3>
-                <div className="contact-form-container">
+        <Wrapper> 
+            <Container>
+                <Title>CONTACT</Title>
+                <FormContainer>
                     <ContactCard />
                     <ContactFrom />
-                </div>
-            </div>
-        </div>
+                </FormContainer>
+            </Container>
+        </Wrapper>
     )
 }
 
