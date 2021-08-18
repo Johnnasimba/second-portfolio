@@ -1,13 +1,48 @@
 import React from 'react';
+import  { Link } from 'react-router-dom'
+import styled from 'styled-components';
 
-import './work-together.styles.css';
+const Wrapper = styled.div`
+    width: 1100px;
+    height: 500px;
 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 150px;
+`;
+const Question = styled.div`
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.56);
+
+`;
+
+const StyledNavLink = styled(Link)`
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 75px;
+    text-decoration: none;
+    color: #FFFFFF;
+    margin-top: 20px;
+    &:hover {
+        border-bottom: 4px solid white;
+    }
+`;
 const WorkTogetherSection = () => {
     return (
-        <div className="work-together-section">
-            <p className="">NEED A FULL STACK DEVELOPER ?</p>
-            <a href="/">let’s work together  <i className="fas fa-arrow-right"></i></a>
-        </div>
+        <Wrapper>
+            <Question>NEED A FULL STACK DEVELOPER ?</Question>
+            <StyledNavLink to="/contact">let’s work together  <i className="fas fa-arrow-right"></i></StyledNavLink>
+        </Wrapper>
     )
 }
 
