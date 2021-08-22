@@ -1,12 +1,33 @@
 import React from 'react'
+import styled from 'styled-components';
 
-import './contact-card.styles.css';
+
+const Wrapper = styled.div`
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    align-items: flex-start;
+    justify-content: space-between;
+`;
+const Card = styled.div`
+    width: 220px;
+    height: 50px;
+    margin: 0px;    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    background: #1B3447;
+`;
+
 
 const ContactCard = () => {
     return (
-        <div className="contact-cards">
+        <Wrapper>
                   {/* linked in card */}
-                   <div className="contact-card">                 
+                   <Card>                 
                         <i className="fab fa-linkedin fa-2x"></i>
                        <div className="contact-title-and-link">
                            <h6>LinkedIn</h6>
@@ -14,9 +35,9 @@ const ContactCard = () => {
                                John Nasimba
                            </a>
                        </div>
-                    </div>
+                    </Card>
                     {/* tell phone number card */}
-                    <div className="contact-card">  
+                    <Card>  
                     <i className="fas fa-phone-square-alt  fa-2x"></i>
                        <div className="contact-title-and-link">
                            <h6>Mobile Phone</h6>
@@ -24,9 +45,9 @@ const ContactCard = () => {
                                 +27-78-038-7591
                            </a>
                        </div>
-                    </div>
+                    </Card>
                      {/* Email card */}
-                    <div className="contact-card">
+                    <Card>
                        <i className="far fa-envelope  fa-2x"></i>
                        <div className="contact-title-and-link">
                            <h6>Email</h6>
@@ -34,8 +55,8 @@ const ContactCard = () => {
                                nasimba4john@gmail.com
                            </a>
                        </div>
-                   </div>
-            </div>
+                   </Card>
+            </Wrapper>
     )
 }
 

@@ -1,29 +1,9 @@
 
-.contact-cards{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    overflow: hidden;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-.contact-card{
-    width: 220px;
-    height: 50px;
-    margin: 0px;
-    
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-    background: #1B3447;
-}
+
 .contact-card i {
     margin-left: 20px;
     margin-right: 20px;
     padding: 0;
-
     color: #FB5B57;
     background: #1B3447;
 }
