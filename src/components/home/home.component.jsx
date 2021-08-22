@@ -1,6 +1,5 @@
 import React from 'react'
-
-import './home.styles.css';
+import styled from 'styled-components';
 
 import LandingSection from './landing-section/landing-section.component';
 import AboutSection from './about-section/about-section.component';
@@ -9,9 +8,14 @@ import WhatIDo from './what-i-do/what-i-do.component';
 import Accomplishments from './accomplishments/accomplishments.component';
 import ContactSection  from './contact-section/contact-section.component';
 
+const Wrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+`;
 const Home = () => {
     return (
-        <div className="home-container">
+        <Wrapper>
             <LandingSection />
             <AboutSection />
             <WorkSection />
@@ -19,7 +23,7 @@ const Home = () => {
             <Accomplishments />
             <ContactSection />          
 
-        </div>
+        </Wrapper>
     )
 }
 
