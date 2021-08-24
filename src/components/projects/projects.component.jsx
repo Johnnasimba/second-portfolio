@@ -1,14 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
+import Card from './project-card/card.component';
 
-import ClothingStore from './clothing-store/clothing-store.component';
-import HoutBay from './houtbay-job-seekers/houtbay.component';
-import InfinityScroll from './infinity-scroll/infinity-scroll.component';
-import DarkMode from './light-and-dark-mode/dark-mode.component';
 
 const Wrapper = styled.div`
     width: 100vw;
-    height: 2000px;
+    min-height: 100vw;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -17,7 +14,7 @@ const Wrapper = styled.div`
 `;
 const Title = styled.h2`
     margin-top:  130px;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
@@ -25,27 +22,32 @@ const Title = styled.h2`
     line-height: 56px;
     color: #FFFFFF;
 `;
-const ProjectTitle = styled.div`
-    width: 1000px;
-    height: 400px;
-    /* background: #000; */
-    margin: 2px;
+const ProjectsContainer = styled.div`
+    width: 1150px;
+    margin: 0;
+    padding: 0;
+    padding-left: 19px;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: flex-start;
+    // background: white;
 `;
 
+
 const Projects = () => {
+    const data = [1, 2, 3, 4, 5, 6, 7, 8, 9];
     return (
         <Wrapper>
             <Title>PROJECTS</Title>
-            <ProjectTitle>
-                <ClothingStore />
-                <HoutBay />
-                <DarkMode />
-                <InfinityScroll />
-            </ProjectTitle>
+             <ProjectsContainer>
+                {
+                    data.map((item, index) => (
+                        <Card key={index}></Card>
+                    ))
+                }
+
+             </ProjectsContainer>
         </Wrapper>
     )
 }

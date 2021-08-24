@@ -39,7 +39,7 @@ const ContactCard = () => {
                     {/* tell phone number card */}
                     <Card>  
                     <i className="fas fa-phone-square-alt  fa-2x"></i>
-                       <div className="contact-title-and-link">
+                       <div className="contact-title- -link">
                            <h6>Mobile Phone</h6>
                            <a href="https://www.linkedin.com/in/john-nasimba/" target="_blank" rel="noopener noreferrer">
                                 +27-78-038-7591
