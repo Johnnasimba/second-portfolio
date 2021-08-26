@@ -18,6 +18,8 @@ const ProjectContainer = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    margin: 0;
+    padding: 0;
 `;
 const ButtonContainer = styled.div`
     display: flex;
@@ -117,7 +119,6 @@ const SecondaryButtonLink = styled.a`
 
 
 const Card = ({ title, imageUrl, description, languages, viewLive, sourceCode }) => {
-    console.log(imageUrl)
     return (
         <Wrapper>
             <ProjectContainer>
@@ -135,10 +136,10 @@ const Card = ({ title, imageUrl, description, languages, viewLive, sourceCode })
             </ProjectContainer>
             <ButtonContainer>
                 <PrimaryButtonContainer>
-                    <PrimaryButtonLink href="http://" target="_blank" rel="noopener noreferrer">View Live</PrimaryButtonLink>
+                    <PrimaryButtonLink href={viewLive} target="_blank" rel="noopener noreferrer">View Live</PrimaryButtonLink>
                 </PrimaryButtonContainer>
                 <SecondaryButtonContainer>
-                    <SecondaryButtonLink href="http://" target="_blank" rel="noopener noreferrer">Source Code</SecondaryButtonLink>
+                    <SecondaryButtonLink href={sourceCode} target="_blank" rel="noopener noreferrer">Source Code</SecondaryButtonLink>
                 </SecondaryButtonContainer>
             </ButtonContainer>
         </Wrapper>

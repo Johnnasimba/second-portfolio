@@ -66,7 +66,7 @@
         "id": 8,
         "title": "custom count down",
         "image": "custom-count-down.png",
-        "description": "This website can be used to keep track of how much time is left before a certain date.. Closing the browser or switching off your computer does not affect the count down.",
+        "description": "This website can be used to keep track of how much time is left before a certain date.. Closing the browser does not affect the count down.",
         "languages": ["javascript.png", "html.png", "css.png"],
         "viewLive": "https://johnnasimba.github.io/Custom-Countdown/",
         "sourceCode": "https://github.com/Johnnasimba/Custom-Countdown"
