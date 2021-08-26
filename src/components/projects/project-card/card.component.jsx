@@ -1,17 +1,29 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Container = styled.div`
+const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     width: 348px;
     height: 460px;
     margin: 15px;
     background: #06273D;
     border-radius: 15px;
 
+`;
+const ProjectContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+`;
+const ButtonContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
 `;
 const Image = styled.img`
     width: 100%;
@@ -57,26 +69,79 @@ const Icon = styled.img`
     height: 30px;
     margin-right: 5px;
 `;
+const PrimaryButtonContainer = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 127.74px;
+    height: 31.98px;
+    margin: 15px;
+    background: #FB5B57;
+    border-radius: 5px;
 
+`;
+const PrimaryButtonLink = styled.a`
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: none;
+
+    color: #FFFFFF;    
+`;
+const SecondaryButtonContainer = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 127.74px;
+    height: 28.98px;
+    margin: 15px;
+    background: #1B3447;
+    border: 2px solid #FB5B57;
+    border-radius: 5px;
+`;
+const SecondaryButtonLink = styled.a`
+    width: 79.71px;
+    height: 21.32px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: none;
+
+    color: #FFFFFF;
+`;
 
 
 
 const Card = ({ title, imageUrl, description, languages, viewLive, sourceCode }) => {
     console.log(imageUrl)
     return (
-        <Container>
-            <Image src={imageUrl}></Image>
-            <Title> { title } </Title>
-            <Description> { description } </Description>
-            <Languages>
-                {
-                    languages.map((iconName, index) => (
-                        <Icon key={index} src={"/images/icons/" + iconName}></Icon>
-                    ))
-                }
-               
-            </Languages>
-        </Container>
+        <Wrapper>
+            <ProjectContainer>
+                <Image src={imageUrl}></Image>
+                <Title> { title } </Title>
+                <Description> { description } </Description>
+                <Languages>
+                    {
+                        languages.map((iconName, index) => (
+                            <Icon key={index} src={"/images/icons/" + iconName}></Icon>
+                        ))
+                    }
+                
+                </Languages>
+            </ProjectContainer>
+            <ButtonContainer>
+                <PrimaryButtonContainer>
+                    <PrimaryButtonLink href="http://" target="_blank" rel="noopener noreferrer">View Live</PrimaryButtonLink>
+                </PrimaryButtonContainer>
+                <SecondaryButtonContainer>
+                    <SecondaryButtonLink href="http://" target="_blank" rel="noopener noreferrer">Source Code</SecondaryButtonLink>
+                </SecondaryButtonContainer>
+            </ButtonContainer>
+        </Wrapper>
     )
 }
 
