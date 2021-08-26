@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
 import Card from './project-card/card.component';
 
@@ -23,7 +23,7 @@ const Title = styled.h2`
     color: #FFFFFF;
 `;
 const ProjectsContainer = styled.div`
-    width: 1150px;
+    max-width: 1150px;
     margin: 0;
     padding: 0;
     padding-left: 19px;
@@ -31,20 +31,46 @@ const ProjectsContainer = styled.div`
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
-    // background: white;
+    justify-content: center;
+`;
+const Spinner = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
 `;
 
 
 const Projects = () => {
-    const data = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-    return (
+    const [projectData, setProjectData] = useState([]);
+
+    useEffect(() => {
+        getData();
+      }, []);
+    
+      async function getData() {
+        const response = await fetch('/projects.json', {
+            headers : { 
+              'Content-Type': 'application/json',
+              'Accept': 'application/json'
+             }
+            });
+        const data = await response.json();
+        setProjectData(data);
+      }
+
+      return (
         <Wrapper>
             <Title>PROJECTS</Title>
              <ProjectsContainer>
                 {
-                    data.map((item, index) => (
-                        <Card key={index}></Card>
-                    ))
+                   projectData ? projectData.map((item) => (
+                        <Card key={item.id}></Card>
+                    )) : (
+                        <Spinner>
+                            Loading projects ...
+                        </Spinner>
+                    )
                 }
 
              </ProjectsContainer>
