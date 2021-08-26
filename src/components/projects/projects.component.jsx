@@ -65,7 +65,15 @@ const Projects = () => {
              <ProjectsContainer>
                 {
                    projectData ? projectData.map((item) => (
-                        <Card key={item.id}></Card>
+                        <Card 
+                        key={item.id}
+                        title = {item.title}
+                        imageUrl = {process.env.PUBLIC_URL + "/images/projects-images/" + item.image}
+                        description = {item.description}
+                        languages = {item.languages}
+                        viewLive = {item.viewLive}
+                        sourceCode = {item.sourceCode}                        
+                        ></Card>
                     )) : (
                         <Spinner>
                             Loading projects ...

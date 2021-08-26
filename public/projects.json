@@ -38,7 +38,7 @@
     {
         "id": 5,
         "title": "light and dark mode",
-        "image": "light-and-dark-mode",
+        "image": "light-and-dark-mode.png",
         "description": "The idea behind this website is to demonstrate how one can add light and dark mode themes commonly used these days.",
         "languages": ["javascript.png", "html.png", "css.png"],
         "viewLive": "https://johnnasimba.github.io/Light-Dark-mode/",
