@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Form = styled.form`
-    width: 100%;
+    width: 700px;
     height: 500px;
     margin-top: 30px;
     display: flex;

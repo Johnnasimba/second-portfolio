@@ -13,14 +13,32 @@ const Container = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    margin-top: 130px
+    margin-top: 100px
+`;
+const Title = styled.h2`
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 42px;
+    margin:0;
+    color: #FFFFFF;
+`;
+const Description = styled.p`
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 40px;
+    margin: 0;
+    color: #FFFFFF;
 `;
 
 const Contact = () => {
     return (
         <Wrapper>
             <Container>
-                contact page
+                <Title>CONTACT</Title>
+                <Description>I would be happy to hear from you for an interview and a possible job offer.</Description>
                 <ContactForm></ContactForm>
             </Container>
         </Wrapper>
