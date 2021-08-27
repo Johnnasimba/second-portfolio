@@ -1,14 +1,15 @@
 import React, { useLayoutEffect } from 'react';
+import  Contact from '../components/contact/contact.component';
 
-const Contact = () =>{
+const ContactPage = () =>{
     useLayoutEffect(() => {
         // Start the page from the top on navigation
         window.scrollTo(0, 0)
       });
 
     return (
-        <div>Contact page</div>
+        <Contact></Contact>
     )
 }
 
-export default Contact;
+export default ContactPage;

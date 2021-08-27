@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import ContactCard from '../../sub-components/contact-card/contact-card.component';
 import ContactFrom from '../../sub-components/contact-form/contact-form.component';
 
 const Wrapper =  styled.div`
@@ -39,7 +38,6 @@ const ContactSection =() => {
             <Container>
                 <Title>CONTACT</Title>
                 <FormContainer>
-                    <ContactCard />
                     <ContactFrom />
                 </FormContainer>
             </Container>
