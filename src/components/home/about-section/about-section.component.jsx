@@ -16,11 +16,11 @@ const Container = styled.div`
     width: 1100px;
     height: 700px;
     margin-top: 0;
-     //background: #000;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
+    @media screen and (max-width: 1100px)
 `;
 const ImageContainer = styled.figure`
     width:400px;

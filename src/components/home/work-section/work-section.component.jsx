@@ -24,6 +24,9 @@ const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    @media screen and (max-width: 1100px) {
+        width: 100vw;
+    }
 `;
 const ProjectDescription = styled.div`
     width: 500px;

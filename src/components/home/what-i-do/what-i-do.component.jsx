@@ -1,6 +1,4 @@
-
 import React from 'react'
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
@@ -11,14 +9,27 @@ const Wrapper = styled.div`
     align-items: center;
     justify-content: center;
     background: #06273D;
+    @media screen and (max-width: 1100px){
+        height: 1500px;
+    }
+    @media screen and (max-width: 800px){
+        height: 1600px;
+    }
+    @media screen and (max-width: 450px){
+        height: 1400px;
+    }
 `;
 const Container = styled.div`
     width: 1100px;
     height: 100%;
-
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media screen and (max-width: 1100px){
+        width: 100vw;
+        height: 2000px;
+        margin-top: 50px;
+    }
 `;
 const Title = styled.h2`
     font-family: Roboto;
@@ -32,8 +43,18 @@ const Title = styled.h2`
 const Cards = styled.div`
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    @media screen and (max-width: 1100px){
+        justify-content: center;
+    }
+    @media screen and (max-width: 600px){
+        padding: 20px;
+        &:nth-child(4) {
+            display: none;
+        };
+    }
 `;
 const Card = styled.div`
     width: 300px;
@@ -41,7 +62,30 @@ const Card = styled.div`
     margin-right: 40px;
     display: flex;
     align-items: center;
-    justify-content: center;    
+    justify-content: center; 
+    @media screen and (max-width: 1100px){
+        margin: 20px;
+
+    } 
+    @media screen and (max-width: 800px){
+        width: 500px;
+        height: 400px;
+    }
+    @media screen and (max-width: 600px){
+        margin: 20px;
+        &:nth-child(4) {
+            display: none;
+        };
+    }
+    @media screen and (max-width: 550px){
+        width: 400px;
+        height: 300px;
+    }
+    @media screen and (max-width: 450px){
+        width: 300px;
+        height: 200px;
+    }
+      
 `;
 const WebDesignCard = styled(Card)`
     background: linear-gradient(0deg, rgba(6, 39, 61, 0.4), rgba(6, 39, 61, 0.4)), url("/images/web-design.jpg");
@@ -63,6 +107,7 @@ const BackEndCard = styled(Card)`
     background-size: cover;
     background-repeat: no-repeat;
 `;
+
 const CardTitle = styled.h4`
     font-family: Roboto;
     font-style: normal;
@@ -71,24 +116,8 @@ const CardTitle = styled.h4`
     line-height: 28px;
     color: #FFFFFF;
 `;
-const Button = styled.button`
-    width: 219px;
-    height: 66px;
-    margin-top: 200px;
-    background: #1B3447;
-    border: 4px solid #FB5B57;
-    box-sizing: border-box;
-    border-radius: 10px;    
-`;
-const NavLink = styled(Link)`
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 28px;
-    color: #FB5B57;
-    text-decoration: none;
-`;
+
+
 
 const WhatIDo = () => {
     return (
@@ -99,17 +128,16 @@ const WhatIDo = () => {
                     <WebDesignCard>
                         <CardTitle>UX Design</CardTitle>
                     </WebDesignCard>
+
                     <FrontEndCard>
                         <CardTitle>Front-End Development</CardTitle>
                     </FrontEndCard>
+
                     <BackEndCard>
                         <CardTitle>Back-End Development</CardTitle>
                     </BackEndCard>
-                
+                    <Card></Card>           
                 </Cards>
-                <Button> 
-                    <NavLink to='/'>Download CV</NavLink>
-                </Button>  
             </Container>
         </Wrapper>
     )
