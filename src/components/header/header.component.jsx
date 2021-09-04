@@ -7,7 +7,6 @@ import MenuList from './menu-items';
 import './header.styles.css';
 
 const Wrapper = styled.div`
-background: #000;
     position: fixed;
     width: 1100px;
     display: flex;
@@ -46,8 +45,8 @@ const NavLinksContainer = styled.ul`
         position: absolute;
         background-color: rgba(6, 39, 61, 0.95);
         padding: 20px;
-        right: 0;
-        top: 50px;
+        right: ${props => props.marginRight? "0" : "-110%"};
+        top: 33px;
         transition: all 0.5s ease-in-out;
     }
 
@@ -56,6 +55,9 @@ const TabContainer = styled.li`
     position: relative;
     margin-left: 20px;
     color: white ;
+    @media screen and (max-width: 800px){
+        margin: 30px;
+     }
     &:hover {
         border-bottom: 2px solid #F94040;  
     };
@@ -67,7 +69,7 @@ const TabContainer = styled.li`
         border: 1px solid #FB5B57;
         color: #FB5B57; 
         overflow: hidden; 
-    }
+    };
     &:nth-child(4) a{
         font-family: Roboto;
         font-style: normal;
@@ -82,10 +84,8 @@ const TabContainer = styled.li`
         text-decoration: none;
         &.active{
             border-bottom: 2px solid #F94040; 
-    }
-    @media screen and (max-width: 800px){
-        margin-bottom: 50px;
-    }
+    };
+    
 `;
 
 const TabLink = styled(NavLink)`
@@ -124,7 +124,7 @@ const Header = () => {
     }
     const MenuItem = MenuList.map(({title, url}, index) => (
         <TabContainer key={index}> 
-            <TabLink exact to={url}>
+            <TabLink exact to={url} onClick={handleClick}>
                 {title}
             </TabLink>
         </TabContainer>
@@ -136,16 +136,12 @@ const Header = () => {
             <Logo exact to="/">
                 <LogoIcon />
             </Logo>
-            <NavLinksContainer>
+            <NavLinksContainer marginRight={clicked}>
                 {MenuItem}
             </NavLinksContainer>
             <MenuIcon onClick={handleClick}>
                 <Icon className={clicked ? "fas fa-times" : "fas fa-bars"}></Icon>
             </MenuIcon>
-            <style>
-               
-            </style>
-            
         </Wrapper>
     )
 }
