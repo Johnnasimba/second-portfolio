@@ -2,6 +2,7 @@ import React from 'react';
 import { ReactComponent as LogoIcon} from './logo.svg';
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
+import MenuList from './menu-items';
 
 const Wrapper = styled.div`
     position: fixed;
@@ -24,6 +25,7 @@ const NavLinksContainer = styled.ul`
     align-items: center;
     justify-content: flex-end;
     list-style-type: none;
+    
 `;
 const TabContainer = styled.li`
     position: relative;
@@ -31,6 +33,29 @@ const TabContainer = styled.li`
     color: white ;
     &:hover {
         border-bottom: 2px solid #F94040;  
+    };
+    &:nth-child(4) {
+        width: 103px;
+        height: 35px;
+        text-align: center;
+        margin: 0 auto;
+        border: 1px solid #FB5B57;
+        color: #FB5B57; 
+        overflow: hidden; 
+    }
+    &:nth-child(4) a{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 28px;
+        color: #FB5B57;
+    
+        font-size: 24px;
+        line-height: 28px;
+        text-decoration: none;
+        &.active{
+            border-bottom: 2px solid #F94040; 
     }
 `;
 
@@ -41,72 +66,27 @@ const TabLink = styled(NavLink)`
     color: white ;  
     &.active{
         border-bottom: 2px solid #F94040;
-    }
+    };
 `;
-const  ContactLinkContainer = styled.li`
-    width: 103px;
-    height: 35px;
-    text-align: center;
-    margin: 0 auto;
-    border: 1px solid #FB5B57;
-    color: #FB5B57; 
-    overflow: hidden;  
-`;
-const ContactLink = styled(NavLink)`
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 28px;
-    color: #FB5B57;
 
-    font-size: 24px;
-    line-height: 28px;
-    text-decoration: none;
-    &.active{
-        border-bottom: 2px solid #F94040;
-    }
-`;
-const MicroCredentialsLink = styled.a`
-    font-size: 24px;
-    line-height: 28px;
-    text-decoration: none;
-    color: white ;  
-`;
 
 
 
 const Header = () => {
+    const MenuItem = MenuList.map(({title, url}, index) => (
+        <TabContainer key={index}> 
+            <TabLink exact to={url}>
+                {title}
+            </TabLink>
+        </TabContainer>
+    ))
     return (
         <Wrapper>
             <Logo exact to="/">
                 <LogoIcon />
             </Logo>
             <NavLinksContainer>
-                <TabContainer>
-                    <TabLink exact to="/">
-                        Home
-                    </TabLink>
-                </TabContainer>
-                <TabContainer >
-                    <TabLink exact to="/about">
-                        About
-                    </TabLink>
-                </TabContainer>
-                <TabContainer>
-                    <TabLink exact  to="/projects">
-                        Projects
-                    </TabLink>
-                </TabContainer>
-               
-                <TabContainer >
-                    <MicroCredentialsLink href="https://micro-credentials.herokuapp.com/" target="_blank" rel="noopener noreferrer">Micro-credentials</MicroCredentialsLink>
-                </TabContainer>
-                <ContactLinkContainer>
-                    <ContactLink exact  to="/contact">
-                        Contact
-                    </ContactLink>
-                </ContactLinkContainer>
+                {MenuItem}
             </NavLinksContainer>
         </Wrapper>
     )

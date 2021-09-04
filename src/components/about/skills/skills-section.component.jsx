@@ -140,7 +140,7 @@ const SkillsSection = () => {
                       </Icon>
                       <Icon>
                           <IconName>JavaScript</IconName>
-                          <IconImage src="./images/icons/js.png" alt="JavaScript" />
+                          <IconImage src="./images/icons/javascript.png" alt="JavaScript" />
                       </Icon>
                       <Icon>
                           <IconName>TypeScript</IconName>

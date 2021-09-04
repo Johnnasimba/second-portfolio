@@ -20,15 +20,12 @@ const Title = styled.h2`
     font-style: normal;
     font-weight: bold;
     font-size: 30px;
-    line-height: 42px;
-    margin:0;
     color: #FFFFFF;
 `;
 const Description = styled.p`
     font-family: Roboto;
     font-style: normal;
     font-size: 18px;
-    line-height: 40px;
     margin: 0;
     color: #FFFFFF;
 `;
