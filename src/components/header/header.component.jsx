@@ -1,10 +1,13 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { ReactComponent as LogoIcon} from './logo.svg';
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 import MenuList from './menu-items';
 
+import './header.styles.css';
+
 const Wrapper = styled.div`
+background: #000;
     position: fixed;
     width: 1100px;
     display: flex;
@@ -14,22 +17,44 @@ const Wrapper = styled.div`
     justify-content: space-between;
     height: 50px;
     top: 12px;
+    @media screen and (max-width: 1100px){
+        width: 100vw;
+    }
 `;
 const Logo = styled(NavLink)`
-    width: 46px;
     height: 42px;
+    margin-left: 0;
+    @media screen and (max-width: 1100px){
+        padding-left: 20px;
+    }
 `;
 const NavLinksContainer = styled.ul`
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
-    list-style-type: none;
-    
+    margin-right: 0;
+    list-style-type: none; 
+    @media screen and (max-width: 1100px){
+        padding-right: 20px;
+    }   
+    @media screen and (max-width: 800px) {
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        background-color: rgba(6, 39, 61, 0.95);
+        padding: 20px;
+        right: 0;
+        top: 50px;
+        transition: all 0.5s ease-in-out;
+    }
+
 `;
 const TabContainer = styled.li`
     position: relative;
-    margin-right: 26px;
+    margin-left: 20px;
     color: white ;
     &:hover {
         border-bottom: 2px solid #F94040;  
@@ -37,8 +62,8 @@ const TabContainer = styled.li`
     &:nth-child(4) {
         width: 103px;
         height: 35px;
+        margin-right: 0;
         text-align: center;
-        margin: 0 auto;
         border: 1px solid #FB5B57;
         color: #FB5B57; 
         overflow: hidden; 
@@ -50,12 +75,16 @@ const TabContainer = styled.li`
         font-size: 24px;
         line-height: 28px;
         color: #FB5B57;
+        margin-right: 0;
     
         font-size: 24px;
         line-height: 28px;
         text-decoration: none;
         &.active{
             border-bottom: 2px solid #F94040; 
+    }
+    @media screen and (max-width: 800px){
+        margin-bottom: 50px;
     }
 `;
 
@@ -68,11 +97,31 @@ const TabLink = styled(NavLink)`
         border-bottom: 2px solid #F94040;
     };
 `;
+const MenuIcon = styled.div`
+    display: none;
+    @media screen and (max-width: 800px) {
+        display: block;
+        margin: -15px 50px 0 0;
+        padding: 0;
+    }    
+`;
+const Icon = styled.i`
+    margin-top: 0;
+    padding-top: 0;
+    cursor: pointer;
+    color: #fff;
+    font-size: 34px;
+`;
 
 
 
 
 const Header = () => {
+    const [clicked, setClicked] = useState(false);
+    
+    function handleClick() {
+        setClicked(!clicked);
+    }
     const MenuItem = MenuList.map(({title, url}, index) => (
         <TabContainer key={index}> 
             <TabLink exact to={url}>
@@ -80,7 +129,9 @@ const Header = () => {
             </TabLink>
         </TabContainer>
     ))
+    
     return (
+
         <Wrapper>
             <Logo exact to="/">
                 <LogoIcon />
@@ -88,6 +139,13 @@ const Header = () => {
             <NavLinksContainer>
                 {MenuItem}
             </NavLinksContainer>
+            <MenuIcon onClick={handleClick}>
+                <Icon className={clicked ? "fas fa-times" : "fas fa-bars"}></Icon>
+            </MenuIcon>
+            <style>
+               
+            </style>
+            
         </Wrapper>
     )
 }

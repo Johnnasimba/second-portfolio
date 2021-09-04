@@ -1,0 +1,9 @@
+
+.fa-times {
+    transform: rotate(360deg);
+    transition: all 0.2s ease-in-out;
+}
+.fa-bars {
+    transform: rotate(180deg);
+    transition: all 0.2s ease-in-out;
+}
