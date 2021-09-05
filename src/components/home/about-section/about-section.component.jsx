@@ -40,6 +40,7 @@ const Image = styled.img`
     margin-bottom: 0px;
     @media screen and (max-width: 800px){
         height: 500px;
+        margin-left: 20px;
     }
 `;
 const Description = styled.div`

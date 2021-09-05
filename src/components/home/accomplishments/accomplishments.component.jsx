@@ -13,6 +13,12 @@ const Wrapper = styled.div`
     @media screen and (max-width: 800px){
         height: 700px;
     }  
+    @media screen and (max-width: 600px){
+        height: 800px;
+    }  
+    @media screen and (max-width: 400px){
+        height: 700px;
+    }  
 `;
 const Container = styled.div`
     width: 1100px;
@@ -28,6 +34,7 @@ const Container = styled.div`
     @media screen and (max-width: 800px) {
         height: 500px;
     }
+  
 `;
 const Title = styled.h2`
     font-family: Roboto;
@@ -35,10 +42,12 @@ const Title = styled.h2`
     font-weight: bold;
     font-size: 30px;
     line-height: 42px;
-    margin-top: 200px;
     color: #FFFFFF;
     @media screen and (max-width: 800px) {
         margin-top: 100px;
+    }
+    @media screen and (max-width: 400px) {
+        font-size: 20px;
     }
 `;
 const BargeContainer = styled.div`
@@ -46,6 +55,9 @@ const BargeContainer = styled.div`
     flex-direction: row;
     align-items:center;
     justify-content:center;
+    @media screen and (max-width: 600px) {
+        flex-direction: column;
+    }
 `;
 const Barge = styled.div`
     display: flex;
@@ -55,7 +67,10 @@ const Barge = styled.div`
     margin-right: 20px;
 `;
 const Image = styled.img`
-    height: 250px;    
+    height: 250px; 
+    @media screen and (max-width: 400px){
+        height: 200px;
+    }   
 `;
 const Verify = styled.a`
     font-family: Roboto;
