@@ -34,9 +34,11 @@ const Name = styled.h3`
     font-weight: bold;
     font-size: 36px;
     margin-top: 100px;
-    margin-bottom: 0;
-       
+    margin-bottom: 0;       
     color: #FB5B57;
+    @media screen and (max-width: 600px){
+        font-size: 30px;
+    }
 `;
 const Title = styled.h1`
     font-family: Roboto;
@@ -45,8 +47,20 @@ const Title = styled.h1`
     font-size: 72px;
     line-height: 84px;
     margin-top: 0;
-
     color: #FFFFFF; 
+    @media screen and (max-width: 800px) {
+        font-size: 50px;
+    }
+    @media screen and (max-width: 800px) {
+        font-size: 40px;
+    }
+    @media screen and (max-width: 500px) {
+        font-size: 35px;
+    }
+    @media screen and (max-width: 400px) {
+        font-size: 30px;
+        line-height: 30px;
+    }
 `;
 const LocationContainer = styled.div`
     display: flex;

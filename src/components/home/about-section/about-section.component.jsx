@@ -11,6 +11,9 @@ const Wrapper = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    @media screen and (max-width: 1100px){
+        height: 1000px;
+    }
 `;
 const Container = styled.div`
     width: 1100px;
@@ -20,7 +23,13 @@ const Container = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    @media screen and (max-width: 1100px)
+    @media screen and (max-width: 1100px){
+        width: 100vw;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
 `;
 const ImageContainer = styled.figure`
     width:400px;
@@ -29,6 +38,9 @@ const ImageContainer = styled.figure`
 const Image = styled.img`
     height: 700px;
     margin-bottom: 0px;
+    @media screen and (max-width: 800px){
+        height: 500px;
+    }
 `;
 const Description = styled.div`
     width: 500px;
@@ -38,7 +50,14 @@ const Description = styled.div`
     align-items: center;
     justify-content: center;
     margin: 0 0 0 50px;
-    padding: 0;
+    padding: 20px;
+    @media screen and (max-width: 1100px){
+        margin-top: -100px;
+    }
+    @media screen and (max-width: 500px){
+        width: 100%;
+        margin: 20px;
+    }
 `;
 const Paragraph = styled.p`
     font-family: Roboto;
@@ -46,7 +65,7 @@ const Paragraph = styled.p`
     font-weight: bold;
     font-size: 18px;
     line-height: 30px;
-    margin: 0;
+    margin: 0 20px;
     color: #FFFFFF;
 `;
 const Button = styled.button`
