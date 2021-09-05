@@ -10,12 +10,14 @@ const Container = styled.div`
     width: 270px; 
     height: 210;
     margin: 0 auto;
-
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
+    @media screen and (max-width: 400px){
+        width: 100vw;
+    }
 `;
 const Title = styled.h5`
     font-family: Roboto;
@@ -24,8 +26,10 @@ const Title = styled.h5`
     font-size: 36px;
     line-height: 42px;
     margin-bottom: 15px;
-
     color: #FFFFFF;
+    @media screen and (max-width: 400px){
+        font-size: 30px;
+    }
 `;
 const Quote = styled.p`
     padding: 0;
@@ -42,11 +46,14 @@ const Quote = styled.p`
 const SocialMediaIcons = styled.div`
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-
     margin-top: 20px;
+    background: #000;
+    @media screen and (max-width: 300px){
+        justify-content: center;
+    }
 `;
 const SocialMediaLink = styled.a`
     display: flex;

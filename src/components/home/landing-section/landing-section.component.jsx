@@ -39,6 +39,9 @@ const Name = styled.h3`
     @media screen and (max-width: 600px){
         font-size: 30px;
     }
+    @media screen and (max-width: 400px){
+        font-size: 20px;
+    }
 `;
 const Title = styled.h1`
     font-family: Roboto;
@@ -46,20 +49,26 @@ const Title = styled.h1`
     font-weight: bold;
     font-size: 72px;
     line-height: 84px;
+    text-align: center;
     margin-top: 0;
     color: #FFFFFF; 
     @media screen and (max-width: 800px) {
+        font-size: 60px;
+    }
+    @media screen and (max-width: 700px) {
         font-size: 50px;
     }
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 600px) {
         font-size: 40px;
+        margin-left: 10px;
     }
     @media screen and (max-width: 500px) {
-        font-size: 35px;
+        font-size: 30px;
+        margin-left: 10px;
     }
     @media screen and (max-width: 400px) {
-        font-size: 30px;
-        line-height: 30px;
+        font-size: 40px;
+        line-height: 40px;
     }
 `;
 const LocationContainer = styled.div`
