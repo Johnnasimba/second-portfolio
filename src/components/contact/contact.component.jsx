@@ -6,6 +6,9 @@ import ContactForm from '../sub-components/contact-form/contact-form.component';
 const Wrapper=  styled.div`
     width: 100vw;
     min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: #06273D;
 `;
 const Container = styled.div`

@@ -6,8 +6,12 @@ const Form = styled.form`
     height: 500px;
     margin-top: 30px;
     display: flex;
+    align-items: center;
     flex-direction: column;
-    flex-wrap: wrap;
+    //background: #000;
+    @media screen and (max-width: 800px){
+        width: 100vw;
+    }
 `;
 const InputContainer = styled.div`
     width: 100%;
@@ -15,6 +19,13 @@ const InputContainer = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between; 
+    @media screen and (max-width: 800px){
+        width: 100vw;
+        margin: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 `;
 const PrimaryInput = styled.input`
     width: 320px;
@@ -31,6 +42,9 @@ const PrimaryInput = styled.input`
     line-height: 16px;
     color: rgba(255, 255, 255, 0.67);
     background: #1B3447;
+    @media screen and (max-width: 800px){
+        width: 90vw;
+    }
 `;
 const SubjectInput = styled.input`
     width: 690px;
@@ -47,6 +61,10 @@ const SubjectInput = styled.input`
     line-height: 16px
     color: rgba(255, 255, 255, 0.67);
     background: #1B3447;
+    @media screen and (max-width: 800px){
+        width: 90vw;
+        margin: 10px;
+    }
 `;
 const MessageTextArea = styled.textarea`
     width: 690px;
@@ -64,6 +82,10 @@ const MessageTextArea = styled.textarea`
     color: rgba(255, 255, 255, 0.67);
     background: #1B3447;
     resize:vertical;
+    @media screen and (max-width: 800px){
+        width: 90vw;
+        margin: 10px;
+    }
 `;
 const Button = styled.button`
     width: 320px;
@@ -76,6 +98,9 @@ const Button = styled.button`
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+    @media screen and (max-width: 400px) {
+        width: 200px;
+    }
 `;
 
 

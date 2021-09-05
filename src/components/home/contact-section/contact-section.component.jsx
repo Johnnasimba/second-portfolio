@@ -19,6 +19,9 @@ const Container = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    @media screen and (max-width: 1100px){
+        width: 100vw;
+    }
 `;
 const Title = styled.h2`
     font-family: Roboto;
@@ -31,6 +34,9 @@ const Title = styled.h2`
 const FormContainer = styled.div`
     width: 700px;
     height: 400px;
+    @media screen and (max-width: 800px) {
+        width: 100vw;
+    }
 `;
 const ContactSection =() => {
     return (
