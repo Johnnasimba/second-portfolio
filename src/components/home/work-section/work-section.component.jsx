@@ -37,6 +37,10 @@ const ProjectDescription = styled.div`
     justify-content: center;
     margin: 0 0 0 50px;
     padding: 0;
+    @media screen and (max-width: 600px) {
+        width: 90vw;
+        margin: 10px;
+    }
 `;
 const Paragraph = styled.p`
     background: rgba(27, 52, 71, 0.7);
@@ -57,7 +61,10 @@ const Button = styled.button`
     background: #1B3447;
     border: 4px solid #FB5B57;
     box-sizing: border-box;
-    border-radius: 10px;    
+    border-radius: 10px; 
+    @media screen and (max-width: 300px){
+        width: 200px;
+    }   
 `;
 const NavLink = styled(Link)`
     font-family: Roboto;

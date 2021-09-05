@@ -50,7 +50,6 @@ const SocialMediaIcons = styled.div`
     align-items: center;
     justify-content: space-between;
     margin-top: 20px;
-    background: #000;
     @media screen and (max-width: 300px){
         justify-content: center;
     }

@@ -9,6 +9,8 @@ const Wrapper = styled.div`
     align-items: center;
     justify-content: center;
     background: #06273D;
+    padding: 0;
+    margin: 0;
     @media screen and (max-width: 1100px){
         height: 1500px;
     }
@@ -28,6 +30,8 @@ const Container = styled.div`
     @media screen and (max-width: 1100px){
         width: 100vw;
         height: 2000px;
+        margin: 0;
+        padding: 0;
         margin-top: 50px;
     }
 `;
@@ -46,6 +50,8 @@ const Cards = styled.div`
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    margin: 0;
+    padding: 0;
     @media screen and (max-width: 1100px){
         justify-content: center;
     }
@@ -82,7 +88,7 @@ const Card = styled.div`
         height: 300px;
     }
     @media screen and (max-width: 450px){
-        width: 300px;
+        width: 90vw;
         height: 200px;
     }
       

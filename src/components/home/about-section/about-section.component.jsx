@@ -29,11 +29,20 @@ const Container = styled.div`
         align-items: center;
         justify-content: center;
     }
+  
     
 `;
 const ImageContainer = styled.figure`
     width:400px;
     height: auto;
+    margin: 0;
+    @media screen and (max-width: 800px){
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
 `;
 const Image = styled.img`
     height: 700px;
@@ -41,6 +50,17 @@ const Image = styled.img`
     @media screen and (max-width: 800px){
         height: 500px;
         margin-left: 20px;
+    }
+    @media screen and (max-width: 600px){
+        width: 300px;
+        height: auto;
+        margin-left: 20px;
+    }
+    @media screen and (max-width: 400px){
+        width: 250px;
+    }
+    @media screen and (max-width: 300px){
+        width: 200px;
     }
 `;
 const Description = styled.div`
@@ -51,13 +71,18 @@ const Description = styled.div`
     align-items: center;
     justify-content: center;
     margin: 0 0 0 50px;
-    padding: 20px;
     @media screen and (max-width: 1100px){
         margin-top: -100px;
     }
     @media screen and (max-width: 500px){
         width: 100%;
-        margin: 20px;
+        margin: -100px 0 20px 0;
+        padding: 0;
+    }
+    @media screen and (max-width: 400px){
+        width: 100%;
+        margin: -50px 0 20px 0;
+        padding: 0;
     }
 `;
 const Paragraph = styled.p`
@@ -66,7 +91,7 @@ const Paragraph = styled.p`
     font-weight: bold;
     font-size: 18px;
     line-height: 30px;
-    margin: 0 20px;
+    padding: 10px;
     color: #FFFFFF;
 `;
 const Button = styled.button`
