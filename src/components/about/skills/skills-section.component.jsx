@@ -9,10 +9,12 @@ const Wrapper = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
     width: 1100px;
     height: 700px;
     margin-bottom: 200px;
+    @media screen and (max-width: 1100px){
+        width: 100vw;
+    }
 `;
 const Title = styled.div`
     font-family: Roboto;
@@ -32,9 +34,11 @@ const IconsContainer = styled.div`
 
     width: 1100px;
     height: 400px;
-
     background: #213F56;
     border-radius: 10px;
+    @media screen and (max-width: 1100px){
+        width: 100vw;
+    }
 `;
 const IconCategory = styled.div`
     display: flex;

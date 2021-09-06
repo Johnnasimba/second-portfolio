@@ -14,7 +14,7 @@ const AboutPage = styled.div`
     align-items: center;
     justify-content: center; 
     background: #1B3447;
-    transition: all 0.5s ease-in-out;
+    // transition: all 0.5s ease-in-out;
 `;
 
 

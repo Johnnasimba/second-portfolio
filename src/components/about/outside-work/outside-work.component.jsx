@@ -10,7 +10,7 @@ import image4 from '../../../assets/slide-images/image4.jpg';
 const Wrapper =  styled.div`
     width: 1100px;
     height: 1000px;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
