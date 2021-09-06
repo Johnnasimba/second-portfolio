@@ -15,7 +15,7 @@ const Wrapper = styled.div`
 `;
 
 const Container = styled.div`
-    background-image: url("/images/projects-image.jpg");
+    background-image: url(${process.env.PUBLIC_URL + "/images/projects-image.jpg"});
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

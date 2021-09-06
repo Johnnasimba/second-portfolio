@@ -94,24 +94,25 @@ const Card = styled.div`
       
 `;
 const WebDesignCard = styled(Card)`
-    background: linear-gradient(0deg, rgba(6, 39, 61, 0.4), rgba(6, 39, 61, 0.4)), url("/images/web-design.jpg");
+    background: linear-gradient(0deg, rgba(6, 39, 61, 0.4), rgba(6, 39, 61, 0.4)), url(${process.env.PUBLIC_URL + "/images/web-design.jpg"});
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
 `;
 const FrontEndCard = styled(Card)`
-    background: linear-gradient(0deg, rgba(27, 52, 71, 0.38), rgba(27, 52, 71, 0.38)), url("/images/front-end-development.jpg");
-    box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(0deg, rgba(27, 52, 71, 0.38), rgba(27, 52, 71, 0.38)), url(${process.env.PUBLIC_URL + "/images/front-end-development.jpg"});
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
 `;
 const BackEndCard = styled(Card)`
-    background: linear-gradient(0deg, rgba(6, 39, 61, 0.69), rgba(6, 39, 61, 0.69)), url("/images//back-end-development.jpg");
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(0deg, rgba(6, 39, 61, 0.69), rgba(6, 39, 61, 0.69)), url(${process.env.PUBLIC_URL + "/images//back-end-development.jpg"});
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 `;
 
 const CardTitle = styled.h4`

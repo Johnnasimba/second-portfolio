@@ -93,7 +93,7 @@ const Accomplishments = () => {
                         {
                             BargeItems.map(({id, title, imageUrl, verificationLink}) =>(
                                 <Barge key={id}>
-                                    <Image src={`/images/achievement-barge/${imageUrl}`}  alt={title} />
+                                    <Image src={`${process.env.PUBLIC_URL}/images/achievement-barge/${imageUrl}`}  alt={title} />
                                     <Verify href={verificationLink} target="_blank" rel="noopener noreferrer">Verify</Verify>
                                 </Barge>
                             ))

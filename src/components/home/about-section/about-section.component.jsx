@@ -123,7 +123,7 @@ const AboutSection = () => {
         <Wrapper>
            <Container>
                <ImageContainer>
-                    <Image src="/images/about-image.png" alt="John Nasimba"/>
+                    <Image src={process.env.PUBLIC_URL + "/images/about-image.png"} alt="John Nasimba"/>
                </ImageContainer>
                <Description>
                    <Paragraph>I am a professional web developer with a great passion for learning. I love developing websites and mobile applications from scratch starting with designing, front-end development, back-end development, APIs development, web hosting and many more.</Paragraph>

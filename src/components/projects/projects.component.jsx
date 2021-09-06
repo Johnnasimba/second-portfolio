@@ -1,5 +1,7 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import styled from 'styled-components';
+
+import ProjectsData from './projects';
 import Card from './project-card/card.component';
 
 
@@ -42,37 +44,20 @@ const Spinner = styled.div`
 
 
 const Projects = () => {
-    const [projectData, setProjectData] = useState([]);
-
-    useEffect(() => {
-        getData();
-      }, []);
-    
-      async function getData() {
-        const response = await fetch('/projects.json', {
-            headers : { 
-              'Content-Type': 'application/json',
-              'Accept': 'application/json'
-             }
-            });
-        const data = await response.json();
-        setProjectData(data);
-      }
-
       return (
         <Wrapper>
             <Title>PROJECTS</Title>
              <ProjectsContainer>
                 {
-                   projectData ? projectData.map((item) => (
+                   ProjectsData ? ProjectsData.map(({id, title, image, description, languages, viewLive, sourceCode}) => (
                         <Card 
-                        key={item.id}
-                        title = {item.title}
-                        imageUrl = {process.env.PUBLIC_URL + "/images/projects-images/" + item.image}
-                        description = {item.description}
-                        languages = {item.languages}
-                        viewLive = {item.viewLive}
-                        sourceCode = {item.sourceCode}                        
+                        key={id}
+                        title = {title}
+                        imageUrl = {process.env.PUBLIC_URL + "/images/projects-images/" + image}
+                        description = {description}
+                        languages = {languages}
+                        viewLive = {viewLive}
+                        sourceCode = {sourceCode}                        
                         ></Card>
                     )) : (
                         <Spinner>

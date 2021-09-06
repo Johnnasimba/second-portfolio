@@ -6,7 +6,7 @@ const Wrapper = styled.div`
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background-image: url("/images/cape-town-city.png");
+    background-image: url(${process.env.PUBLIC_URL + "/images/cape-town-city.png"});
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -90,7 +90,7 @@ const LandingSection = () => {
         <Wrapper>
             <Container>
                 <ProfileImageContainer>
-                    <ProfileImage src="/images/profile-image.jpg" alt="John Nasimba" />
+                    <ProfileImage src={process.env.PUBLIC_URL + "/images/profile-image.jpg"} alt="John Nasimba" />
                 </ProfileImageContainer>
                 <Name>John Nasimba</Name>
                 <Title>Full-Stack Web Developer</Title>

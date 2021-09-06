@@ -128,7 +128,7 @@ const Card = ({ title, imageUrl, description, languages, viewLive, sourceCode })
                 <Languages>
                     {
                         languages.map((iconName, index) => (
-                            <Icon key={index} src={"/images/icons/" + iconName}></Icon>
+                            <Icon key={index} src={process.env.PUBLIC_URL + "/images/icons/" + iconName}></Icon>
                         ))
                     }
                 

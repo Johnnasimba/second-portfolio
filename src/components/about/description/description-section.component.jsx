@@ -50,7 +50,7 @@ const DescriptionSection = () => {
                <Paragraph>You can check out my skills below, and don't forget to contact me for an interview and a possible job offer. </Paragraph>
            </Description>
            <Figure>
-               <AboutImage src="./images/John-nasimba(about-me).jpg" alt="John Nasimba" className="description-section-image" />
+               <AboutImage src={process.env.PUBLIC_URL + "/images/John-nasimba(about-me).jpg"} alt="John Nasimba" className="description-section-image" />
            </Figure>
         </Wrapper>
     )

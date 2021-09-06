@@ -58,11 +58,12 @@ const SubjectInput = styled.input`
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
-    line-height: 16px
+    line-height: 16px;
     color: rgba(255, 255, 255, 0.67);
     background: #1B3447;
     @media screen and (max-width: 800px){
         width: 90vw;
+        height: 100px;
         margin: 10px;
     }
 `;
@@ -98,8 +99,9 @@ const Button = styled.button`
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
-    @media screen and (max-width: 400px) {
-        width: 200px;
+    @media screen and (max-width: 400px){
+        width: 90vw;
+        height: 70px;
     }
 `;
 
