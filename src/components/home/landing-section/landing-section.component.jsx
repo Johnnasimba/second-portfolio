@@ -19,13 +19,25 @@ const Container = styled.div`
     align-items: center;
     justify-content: center;
     margin-top: 130px;
+    @media screen and (max-width: 800px) {
+        justify-content: flex-start;
+        margin-top: 80px;
+    }
 `;
 const ProfileImageContainer = styled.div`
     width: 303.28px;
     height: 299px;
+    @media screen and (max-width: 400px){
+        width: 90vw;
+        height: auto;
+    }
 `;
 const ProfileImage = styled.img`
     border-radius: 50%;
+    @media screen and (max-width: 400px){
+        width: 90vw;
+        height: auto;
+    }
 `;
 const Name = styled.h3`
     height: 40px; 
@@ -38,6 +50,7 @@ const Name = styled.h3`
     color: #FB5B57;
     @media screen and (max-width: 600px){
         font-size: 30px;
+        margin-top: 10px;
     }
     @media screen and (max-width: 400px){
         font-size: 20px;
