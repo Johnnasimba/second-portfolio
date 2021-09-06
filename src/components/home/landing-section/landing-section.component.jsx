@@ -10,6 +10,10 @@ const Wrapper = styled.div`
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    @media screen and (max-width: 800px){
+        height: 900px;
+        overflow:hidden;
+    }
 `;
 const Container = styled.div`
     width: 100%;

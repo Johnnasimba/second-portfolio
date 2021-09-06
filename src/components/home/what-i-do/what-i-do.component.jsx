@@ -15,10 +15,10 @@ const Wrapper = styled.div`
         height: 1500px;
     }
     @media screen and (max-width: 800px){
-        height: 1600px;
+        height: 950px;
     }
-    @media screen and (max-width: 450px){
-        height: 1400px;
+    @media screen and (max-width: 700px){
+        height: 1300px;
     }
 `;
 const Container = styled.div`
@@ -43,6 +43,9 @@ const Title = styled.h2`
     line-height: 42px;
     margin-top: 200px;
     color: #FFFFFF;
+    @media screen and (max-width: 800px){
+        margin-top: 20px;
+    }
 `;
 const Cards = styled.div`
     display: flex;
@@ -73,23 +76,16 @@ const Card = styled.div`
         margin: 20px;
 
     } 
-    @media screen and (max-width: 800px){
-        width: 500px;
-        height: 400px;
-    }
+ 
     @media screen and (max-width: 600px){
         margin: 20px;
         &:nth-child(4) {
             display: none;
         };
     }
-    @media screen and (max-width: 550px){
-        width: 400px;
-        height: 300px;
-    }
     @media screen and (max-width: 450px){
         width: 90vw;
-        height: 200px;
+        height: 300px;
     }
       
 `;
@@ -114,6 +110,11 @@ const BackEndCard = styled(Card)`
     background-repeat: no-repeat;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 `;
+const InvisibleCard = styled(Card)`
+    @media screen and (max-width: 700px){
+        display: none;
+    }
+`;
 
 const CardTitle = styled.h4`
     font-family: Roboto;
@@ -122,6 +123,9 @@ const CardTitle = styled.h4`
     font-size: 24px;
     line-height: 28px;
     color: #FFFFFF;
+    @media screen and (max-width: 350px){
+        font-size: 18px;
+    }
 `;
 
 
@@ -143,7 +147,7 @@ const WhatIDo = () => {
                     <BackEndCard>
                         <CardTitle>Back-End Development</CardTitle>
                     </BackEndCard>
-                    <Card></Card>           
+                    <InvisibleCard></InvisibleCard>           
                 </Cards>
             </Container>
         </Wrapper>
