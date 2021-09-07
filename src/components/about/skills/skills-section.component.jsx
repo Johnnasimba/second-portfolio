@@ -5,15 +5,19 @@ import FrontendIcons from './frontend-icons';
 import BackendIcons from './backend-icons';
 
 const Wrapper = styled.div`
+    width: 1100px;
+    height: 700px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 1100px;
-    height: 700px;
     margin-bottom: 200px;
     @media screen and (max-width: 1100px){
         width: 100vw;
+        height: auto;
+    }
+    @media screen and (max-width: 300px){
+        margin-top: 50px;
     }
 `;
 const Title = styled.div`
@@ -36,18 +40,43 @@ const IconsContainer = styled.div`
     height: 400px;
     background: #213F56;
     border-radius: 10px;
-    @media screen and (max-width: 1100px){
-        width: 100vw;
+    @media screen and (max-width: 1200px){
+        width: 80vw;
+        height: 600px;
+        
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    @media screen and (max-width: 900px){
+        height: 800px;
+    }
+    @media screen and (max-width: 600px){
+        height: 1000px;
+    }
+    @media screen and (max-width: 500px) {
+        width: 90vw;
+        height: 1200px;
+    }
+    @media screen and (max-width: 400px) {
+        width: 90vw;
+        height: 1400px;
     }
 `;
 const IconCategory = styled.div`
+    width: 45%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    @media screen and (max-width: 1200px){
+        width: 90%;
+    }
+    @media screen and (max-width: 500px){
+        width: 100%;
+    }
 
-    width: 45%;
-    height: 100%;
 `;
 const CategoryTitle = styled.h4`
     font-family: Roboto;

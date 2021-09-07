@@ -7,14 +7,14 @@ const Container = styled.div`
     margin-top: 100px;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-between;
     @media screen and (max-width: 1200px){
         width: 100vw;
+        height: 1300px;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        align-items: flex-start;
+        justify-content: flex-start;
     }
 `;
 const Description = styled.div`
@@ -25,18 +25,53 @@ const Description = styled.div`
     font-size: 20px;
     line-height: 23px;
     color: #FFFFFF;
+    @media screen and (max-width: 1200px) {
+        width: 80vw;
+        margin: 0 0 0 20px;
+    }
+    @media screen and (max-width: 800px) {
+        width: 90vw;
+    }
+
 `;
 
 const Title = styled.h5``;
 const Paragraph = styled.p``;
 
-const Figure = styled.figure`
+const Figure = styled.div`
     width: 400px;
     height: 600px;
     background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (max-width: 1200px){
+        width: 550px;
+        margin: 80px 0 20px 20px;
+    }
+    @media screen and (max-width: 800px){
+        width: 90vw;
+        margin-top: 200px;
+    }
+    @media screen and (max-width: 750px){
+        margin-top: 180px;
+    }
+    @media screen and (max-width: 650px){
+        margin-top: 130px;
+    }
+    @media screen and (max-width: 650px){
+        margin-top: 130px;
+    }
+    @media screen and (max-width: 550px){
+        margin-top: 50px;
+    }
 `;
 const AboutImage = styled.img`
     height: 600px;
+    @media screen and (max-width: 1200px) {
+        width: 100%;
+        height: auto;
+    }
 `;
 
 
