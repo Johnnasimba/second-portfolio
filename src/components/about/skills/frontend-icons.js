@@ -47,21 +47,16 @@ const FrontendIcons = [
     },
     {
         id: 10,
-        title: "Materialize",
-        url: "materialize.png"
-    },
-    {
-        id: 11,
         title: "Jquery",
         url: "jquery.png"
     },
     {
-        id: 12,
+        id: 11,
         title: "HTML",
         url: "html.png"
     },
     {
-        id: 13,
+        id: 12,
         title: "CSS",
         url: "css.png"
     }

@@ -33,7 +33,7 @@ const IconsContainer = styled.div`
     justify-content: center;
 
     width: 1100px;
-    height: 500px;
+    height: 400px;
     background: #213F56;
     border-radius: 10px;
     @media screen and (max-width: 1100px){
@@ -43,7 +43,7 @@ const IconsContainer = styled.div`
 const IconCategory = styled.div`
     display: flex;
     flex-direction: column;
-    align-items: ;
+    align-items: center;
     justify-content: flex-start;
 
     width: 45%;
