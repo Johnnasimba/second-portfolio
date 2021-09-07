@@ -32,7 +32,7 @@ const FrontendIcons = [
     },
     {
         id: 7,
-        title: "Styled Component",
+        title: "StyledComponent",
         url: "styled-components.png"
     },
     {
