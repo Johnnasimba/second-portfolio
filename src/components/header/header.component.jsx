@@ -38,7 +38,7 @@ const NavLinksContainer = styled.ul`
         padding-right: 20px;
     }   
     @media screen and (max-width: 800px) {
-        display: none;
+        display: flex;
         flex-direction: column;
         justify-content: flex-start;
         width: 100%;
@@ -46,7 +46,7 @@ const NavLinksContainer = styled.ul`
         position: absolute;
         background-color: rgba(6, 39, 61, 0.95);
         padding: 20px;
-        right: ${props => props.marginRight? "0" : "-100%"};
+        right: ${props => props.marginRight? "0" : "-120%"};
         top: 33px;
         transition: all 0.5s ease-in-out;
     }

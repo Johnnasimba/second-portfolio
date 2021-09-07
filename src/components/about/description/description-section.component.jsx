@@ -1,8 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Wrapper = styled.div`
-    background: #000;
+const Container = styled.div`
     width: 1100px;
     height: 650px;
     margin-top: 100px;
@@ -20,7 +19,6 @@ const Wrapper = styled.div`
 `;
 const Description = styled.div`
     width: 550px;
-    background: red;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -44,7 +42,7 @@ const AboutImage = styled.img`
 
 const DescriptionSection = () => {
     return (
-        <Wrapper>
+        <Container>
            <Description>
                <Title>Hello 👋</Title>
                <Paragraph>My name is John Nasimba. I am a passionate full-stack web developer living in Cape Town, South Africa. I was born in Malawi in 1997. </Paragraph>
@@ -57,7 +55,7 @@ const DescriptionSection = () => {
            <Figure>
                <AboutImage src={process.env.PUBLIC_URL + "/images/John-nasimba(about-me).jpg"} alt="John Nasimba" className="description-section-image" />
            </Figure>
-        </Wrapper>
+        </Container>
     )
 }
 
