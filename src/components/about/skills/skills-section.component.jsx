@@ -12,9 +12,11 @@ const Wrapper = styled.div`
     align-items: center;
     justify-content: center;
     margin-bottom: 200px;
-    @media screen and (max-width: 1100px){
+    @media screen and (max-width: 1200px){
         width: 100vw;
         height: auto;
+        justify-content: flex-start;
+        align-items: flex-start;
         margin-top: 50px;
     }
     @media screen and (max-width: 300px){
@@ -33,6 +35,17 @@ const Wrapper = styled.div`
     @media screen and (max-width: 200px){
         margin-top: 400px;   
     }
+`;
+const Container = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    //background: red;
+    margin-left: 20px;
+    @media screen and (max-width: 300px){
+        margin-left: 0;
+    }
+
 `;
 const Title = styled.div`
     font-family: Roboto;
@@ -152,6 +165,7 @@ const IconImage = styled.img`
 const SkillsSection = () => {
     return (
         <Wrapper>
+            <Container>
            <Title>SKILLS</Title>
                
            <IconsContainer>
@@ -183,7 +197,7 @@ const SkillsSection = () => {
                     </Icons>
                 </IconCategory>
            </IconsContainer>
-
+           </Container>
         </Wrapper>
     )
 }
