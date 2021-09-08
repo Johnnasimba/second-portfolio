@@ -15,9 +15,23 @@ const Wrapper = styled.div`
     @media screen and (max-width: 1100px){
         width: 100vw;
         height: auto;
+        margin-top: 50px;
     }
     @media screen and (max-width: 300px){
-        margin-top: 50px;
+        margin-top: 100px;   
+    }
+   
+    @media screen and (max-width: 300px){
+        margin-top: 100px;   
+    }
+    @media screen and (max-width: 250px){
+        margin-top: 200px;   
+    }
+    @media screen and (max-width: 220px){
+        margin-top: 300px;   
+    }
+    @media screen and (max-width: 200px){
+        margin-top: 400px;   
     }
 `;
 const Title = styled.div`
@@ -61,6 +75,10 @@ const IconsContainer = styled.div`
     @media screen and (max-width: 400px) {
         width: 90vw;
         height: 1400px;
+    }
+    @media screen and (max-width: 300px) {
+        width: 100vw;
+        height: auto;
     }
 `;
 const IconCategory = styled.div`

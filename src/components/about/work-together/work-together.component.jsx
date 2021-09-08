@@ -11,8 +11,11 @@ const Wrapper = styled.div`
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
-
     margin-bottom: 150px;
+    @media screen and (max-width: 1100px){
+        width: 100vw;
+        height: 300px;
+    }
 `;
 const Question = styled.div`
     font-family: Roboto;
@@ -21,6 +24,10 @@ const Question = styled.div`
     font-size: 18px;
     line-height: 21px;
     color: rgba(255, 255, 255, 0.56);
+    @media screen and (max-width: 700px){
+        font-size: 12px;
+        line-height: 0;
+    }
 
 `;
 
@@ -35,6 +42,14 @@ const StyledNavLink = styled(Link)`
     margin-top: 20px;
     &:hover {
         border-bottom: 4px solid white;
+    }
+    @media screen and (max-width: 700px){
+        font-size: 40px;
+        line-height: 40px;
+    }
+    @media screen and (max-width: 350px){
+        font-size: 20px;
+        line-height: 40px;
     }
 `;
 const WorkTogetherSection = () => {
