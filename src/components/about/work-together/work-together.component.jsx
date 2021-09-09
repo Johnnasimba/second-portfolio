@@ -37,7 +37,7 @@ const StyledNavLink = styled(Link)`
     font-weight: bold;
     font-size: 64px;
     line-height: 75px;
-    text-decoration: none;
+    text-decoration: underline;
     color: #FFFFFF;
     margin-top: 20px;
     &:hover {
@@ -45,6 +45,14 @@ const StyledNavLink = styled(Link)`
     }
     @media screen and (max-width: 700px){
         font-size: 40px;
+        line-height: 40px;
+    }
+    @media screen and (max-width: 700px){
+        font-size: 40px;
+        line-height: 40px;
+    }
+    @media screen and (max-width: 450px){
+        font-size: 30px;
         line-height: 40px;
     }
     @media screen and (max-width: 350px){
