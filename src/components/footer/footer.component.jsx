@@ -5,6 +5,9 @@ const Wrapper = styled.footer`
     width: 100vw;
     height: 350px;
     background: #1B3447;
+    @media screen and (max-width: 350px){
+        height: 300px;
+    }
 `;
 const Container = styled.div`
     width: 270px; 
@@ -30,6 +33,12 @@ const Title = styled.h5`
     @media screen and (max-width: 400px){
         font-size: 30px;
     }
+    @media screen and (max-width: 300px){
+        font-size: 24px;
+    }
+    @media screen and (max-width: 250px){
+        font-size: 20px;
+    }
 `;
 const Quote = styled.p`
     padding: 0;
@@ -40,8 +49,11 @@ const Quote = styled.p`
     font-size: 14px;
     line-height: 14px;
     text-align: center;
-
     color: #FFFFFF;
+    @media screen and (max-width: 350px){
+        font-size: 11px;
+        line-height: 10px;
+    }
 `;
 const SocialMediaIcons = styled.div`
     display: flex;
@@ -69,6 +81,10 @@ const SocialMediaLink = styled.a`
     text-decoration: none;
     border-radius: 50%;
     border: 1px solid #FB5B57;
+    @media screen and (max-width: 350px){
+        width: 30px;
+        height:30px;
+    }
 `;
 const ClosingRemarks = styled.div`
     display: flex;
@@ -76,6 +92,7 @@ const ClosingRemarks = styled.div`
     align-items: center;
     margin-top: 10px;
     margin-bottom: 0;
+  
 `;
 const CopyRight = styled.p`
     font-family: Roboto;
@@ -83,8 +100,10 @@ const CopyRight = styled.p`
     font-weight: bold;
     font-size: 12px;
     line-height: 14px;
-
-    color: #FFFFFF
+    color: #FFFFFF;
+    @media screen and (max-width: 350px){
+        font-size: 8px;
+    }
 `;
 const OwnerName = styled.span`
     font-weight: bold;
