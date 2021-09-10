@@ -5,9 +5,17 @@ import { NavLink } from 'react-router-dom';
 import MenuList from './menu-items';
 
 import './header.styles.css';
-
 const Wrapper = styled.div`
     position: fixed;
+    top: 0px;
+    width: 100vw;
+    height: 70px;
+    background-color: rgba(6, 39, 61, 0.95);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`;
+const Container = styled.div`
     width: 1100px;
     display: flex;
     flex-direction: row;
@@ -15,7 +23,6 @@ const Wrapper = styled.div`
     align-items: center;
     justify-content: space-between;
     height: 50px;
-    top: 12px;
     @media screen and (max-width: 1100px){
         width: 100vw;
     }
@@ -102,7 +109,7 @@ const MenuIcon = styled.div`
     display: none;
     @media screen and (max-width: 800px) {
         display: block;
-        margin: -15px 50px 0 0;
+        margin: -15px 20px 0 0;
         padding: 0;
     }    
 `;
@@ -132,17 +139,18 @@ const Header = () => {
     ))
     
     return (
-
         <Wrapper>
-            <Logo exact to="/">
-                <LogoIcon />
-            </Logo>
-            <NavLinksContainer marginRight={clicked}>
-                {MenuItem}
-            </NavLinksContainer>
-            <MenuIcon onClick={handleClick}>
-                <Icon className={clicked ? "fas fa-times" : "fas fa-bars"}></Icon>
-            </MenuIcon>
+            <Container>
+                <Logo exact to="/">
+                    <LogoIcon />
+                </Logo>
+                <NavLinksContainer marginRight={clicked}>
+                    {MenuItem}
+                </NavLinksContainer>
+                <MenuIcon onClick={handleClick}>
+                    <Icon className={clicked ? "fas fa-times" : "fas fa-bars"}></Icon>
+                </MenuIcon>
+            </Container>
         </Wrapper>
     )
 }
