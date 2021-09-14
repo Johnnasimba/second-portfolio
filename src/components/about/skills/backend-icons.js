@@ -8,7 +8,7 @@ const BackendIcons = [
     {
         id: 2,
         title: "Python",
-        url: "Python.png"
+        url: "python.png"
     },
     {
         id: 3,
@@ -53,7 +53,7 @@ const BackendIcons = [
     {
         id: 11,
         title: "Firebase",
-        url: "Heroku.png"
+        url: "firebase.png"
     },
     {
         id: 12,

@@ -28,7 +28,7 @@ const FrontendIcons = [
     {
         id: 6,
         title: "AngularJS",
-        url: "angularJS.png"
+        url: "angular-js.png"
     },
     {
         id: 7,
