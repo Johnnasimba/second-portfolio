@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import { ReactComponent as LogoIcon} from './logo.svg';
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
@@ -7,13 +7,17 @@ import MenuList from './menu-items';
 import './header.styles.css';
 const Wrapper = styled.div`
     position: fixed;
+    background:  ${props => props.background? "rgba(6, 39, 61, 0.95)" : " "};
     top: 0px;
     width: 100vw;
     height: 70px;
-    background-color: rgba(6, 39, 61, 0.95);
     display: flex;
     align-items: center;
     justify-content: center;
+    -webkit-transition: all 0.5s 0s ease;
+    -moz-transition: all 0.5s 0s ease;
+    -o-transition: all 0.5s 0s ease;
+    transition: all 0.5s 0s ease;
 `;
 const Container = styled.div`
     width: 1100px;
@@ -126,7 +130,23 @@ const Icon = styled.i`
 
 const Header = () => {
     const [clicked, setClicked] = useState(false);
-    
+    const [background, setBackground] = useState(false);
+
+    // apply background onscroll
+
+    function listenScrollEvent(e){
+        console.log(window.scrollY + "on scroll");
+        if ( window.scrollY> 400) {
+          setBackground(true);
+        }else{
+            setBackground(false);
+        } 
+    }
+    useEffect(() => {
+        window.addEventListener('scroll', listenScrollEvent)        
+    }, [])
+
+    // add active class when linked is clicked
     function handleClick() {
         setClicked(!clicked);
     }
@@ -139,7 +159,7 @@ const Header = () => {
     ))
     
     return (
-        <Wrapper>
+        <Wrapper background = {background}>
             <Container>
                 <Logo exact to="/">
                     <LogoIcon />
